@@ -33,7 +33,10 @@ document.addEventListener('keyup' , function (event){
         const expectedPressed = document.getElementById("random-word").innerText.toLowerCase() ; 
 
         if(playerPressed === 'Escape'){
-            gameOver ();
+                gameOver();
+                document.getElementById('final-score').innerText = getCurrentValue('current-score');
+            
+
         }
 
        if(playerPressed === expectedPressed){
