@@ -35,6 +35,8 @@ document.addEventListener('keyup' , function (event){
         if(playerPressed === 'Escape'){
                 gameOver();
                 document.getElementById('final-score').innerText = getCurrentValue('current-score');
+                const element = document.getElementById('random-word').innerText.toLowerCase();
+                removeBackgroundColor(element);
             
 
         }
